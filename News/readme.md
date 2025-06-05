@@ -30,3 +30,17 @@
 - Time for the exposed filters.
     Added date and categories filters exposed them
     but for author I installed **verf**(Views Entity Reference Filter) contrib module to add exposed filter by author.
+    And for displaying the date picker for the field Publication date added **Better exposed filters** module.
+2. Creating author profile page.
+    Used pathauto to create paths for authors.
+    Created view to display the articles written by the author
+    there used contextual filter which takes parameter from the url and displays the articles written by that author.
+    created block for that view and placed it for the author content type in block layout.
+3. Creating category landing page
+    With the help of pathauto created the landing pages for each category
+    Created a block to display the subcategories of the current parent category.
+4. Creating a related articles section.
+    Created new view which will display 2 articles which are from the same category and excludes the current article from displaying in that section.
+5. Custom search view
+    created new view with the help or search_api module and set its url to `/search` exposed the fulltext search filture and it searches for the text in both title and body of the articles.
+    Installed `facets` module and created its filter for categories on search page.
