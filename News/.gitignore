@@ -60,3 +60,9 @@
 /drush
 /drupal.phar
 /drupal
+
+
+# Ignore contributed modules, themes, and libraries
+/web/modules/contrib/
+/web/themes/contrib/
+/web/libraries/
