@@ -1,0 +1,33 @@
+uuid: e29692f8-97f2-41a3-bd76-4ac74084842e
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.articles_by_author
+  module:
+    - node
+    - views
+  theme:
+    - gin
+id: gin_views_block__articles_by_author_block_1
+theme: gin
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:articles_by_author-block_1'
+settings:
+  id: 'views_block:articles_by_author-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      author: author

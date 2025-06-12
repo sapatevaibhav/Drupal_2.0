@@ -1,0 +1,23 @@
+uuid: decc9129-22a3-4b44-aba7-56d5dc8cb509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.author
+  module:
+    - link
+id: node.author.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: author
+label: 'Social links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

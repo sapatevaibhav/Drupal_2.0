@@ -1,0 +1,29 @@
+uuid: fe826788-a10b-45f1-8a93-d38dbe8033a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.categories
+  module:
+    - facets
+    - system
+  theme:
+    - gin
+id: gin_categories
+theme: gin
+region: help
+weight: 0
+provider: null
+plugin: 'facet_block:categories'
+settings:
+  id: 'facet_block:categories'
+  label: Categories
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: gin_categories
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /search

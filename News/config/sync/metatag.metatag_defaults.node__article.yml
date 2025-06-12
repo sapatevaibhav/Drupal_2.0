@@ -1,0 +1,11 @@
+uuid: 8bca25ed-4fed-4eec-9e2a-2d9b93781c3f
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  abstract: '[node:summary]'
+  description: '[node:summary]'
+  keywords: '[node:field_tags]'
+  title: '[node:title] | [site:name]'

@@ -1,0 +1,20 @@
+uuid: 943e2298-52c0-4f8d-93b8-88fe4a2b1367
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/splits/dev
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+complete_list:
+  - devel.settings
+  - system.performance
+partial_list: {  }

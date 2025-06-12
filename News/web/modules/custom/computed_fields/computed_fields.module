@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Contains author_articles.module.
+ */
+
+/**
+ * Implements hook_field_widget_info_alter().
+ */
+function author_articles_field_widget_info_alter(array &$info) {
+  if (isset($info['hidden']['field_types']) && in_array('computed_articles_count', $info['hidden']['field_types'])) {
+    // Remove 'computed_articles_count' from the hidden widget's field_types.
+    $key = array_search('computed_articles_count', $info['hidden']['field_types']);
+    unset($info['hidden']['field_types'][$key]);
+  }
+}

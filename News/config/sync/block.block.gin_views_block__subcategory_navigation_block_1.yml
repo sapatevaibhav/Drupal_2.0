@@ -1,0 +1,30 @@
+uuid: ead70858-c581-42e1-b24e-b010fbfbf526
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.subcategory_navigation
+  module:
+    - system
+    - views
+  theme:
+    - gin
+id: gin_views_block__subcategory_navigation_block_1
+theme: gin
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:subcategory_navigation-block_1'
+settings:
+  id: 'views_block:subcategory_navigation-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/category/*'

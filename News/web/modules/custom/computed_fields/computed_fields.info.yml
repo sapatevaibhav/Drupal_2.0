@@ -1,0 +1,7 @@
+name: Computed Fields
+type: module
+description: Provides a field type that allows you to compute a value based on other fields.
+package: Vaibhav
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - node

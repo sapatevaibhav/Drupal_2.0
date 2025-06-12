@@ -1,0 +1,17 @@
+uuid: 68dbcd77-66d8-41d7-adb8-cc506bb1e994
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/splits/prod
+module: {  }
+theme: {  }
+complete_list:
+  - system.performance
+partial_list: {  }

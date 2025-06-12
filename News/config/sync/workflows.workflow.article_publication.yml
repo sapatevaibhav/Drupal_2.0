@@ -1,0 +1,53 @@
+uuid: 99df12a3-d0c1-4e6c-b4a9-195fe067a80c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - content_moderation
+id: article_publication
+label: 'Article publication'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: -2
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 0
+      published: true
+      default_revision: true
+    review:
+      label: Review
+      weight: -1
+      published: false
+      default_revision: false
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+        - published
+      to: draft
+      weight: -2
+    publish:
+      label: Publish
+      from:
+        - published
+        - review
+      to: published
+      weight: 0
+    review:
+      label: Review
+      from:
+        - draft
+      to: review
+      weight: -1
+  entity_types:
+    node:
+      - article
+  default_moderation_state: draft

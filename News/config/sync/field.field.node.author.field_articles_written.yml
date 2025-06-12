@@ -1,0 +1,21 @@
+uuid: e75d8f9b-3bdb-42a2-8d69-bb6cf314ce75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_articles_written
+    - node.type.author
+  module:
+    - computed_fields
+id: node.author.field_articles_written
+field_name: field_articles_written
+entity_type: node
+bundle: author
+label: 'Articles written'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: computed_articles_count
