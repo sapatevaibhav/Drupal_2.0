@@ -28,11 +28,17 @@
         "drupal/facets": "^3.0",
         "drupal/gin": "^4.0",
         "drupal/gin_toolbar": "^2.0",
+        "drupal/jsonapi_views": "^1.1",
         "drupal/metatag": "^2.1",
+        "drupal/migrate_tools": "^6.0",
+        "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.13",
         "drupal/search_api": "^1.38",
         "drupal/search_api_db": "^1.38",
+        "drupal/simple_oauth": "^6.0",
+        "drupal/tmgmt": "^1.17",
         "drupal/verf": "^2.1",
+        "drupal/webform": "^6.2",
         "drush/drush": "^13.6"
     },
     "conflict": {

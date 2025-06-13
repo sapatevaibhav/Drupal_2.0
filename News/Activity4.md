@@ -2,7 +2,7 @@
 ## Activity 2.2
 ### Advanced Drush Commands
 
-#### . **Configuration with Drush**
+#### **Configuration with Drush**
 
 1. `drush config:export`
     Export Drupal configuration to a directory.
@@ -67,4 +67,4 @@
     drush entity:save user. Re-save all users.
     drush entity:save node --chunks=5. Re-save all node entities in steps of 5.
 
-`   ![drush entity:save](images/image-19.png)
+    ![drush entity:save](images/image-19.png)
