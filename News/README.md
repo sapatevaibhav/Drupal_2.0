@@ -3,3 +3,5 @@
 ## [Third Activity : Essential drush commands](Activity3.md)
 ## [Fourth Activity : Advanced drush commands](Activity4.md)
 ## [Fifth Activity : Essential contrib modules](Activity5.md)
+## [Sixth Activity : Complex module integration](Activity6.md)
+## [Seventh Activity : Module Development](Activity7.md)

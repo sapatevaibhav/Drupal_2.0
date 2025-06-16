@@ -16,8 +16,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *   default_formatter = "computed_fields_formatter"
  * )
  */
-class ComputedArticlesCount
- extends FieldItemBase {
+class ComputedArticlesCount extends FieldItemBase {
 
   /**
    * {@inheritdoc}
@@ -27,6 +26,9 @@ class ComputedArticlesCount
     return [];
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
     $properties['value'] = DataDefinition::create('integer')
       ->setLabel(t('Article Count'))
@@ -35,6 +37,9 @@ class ComputedArticlesCount
     return $properties;
   }
 
+  /**
+   * {@inheritdoc}
+   */
   public function isEmpty() {
     return FALSE;
   }

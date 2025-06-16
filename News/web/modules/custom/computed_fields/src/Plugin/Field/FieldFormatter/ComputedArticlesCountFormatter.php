@@ -18,6 +18,9 @@ use Drupal\Core\Field\FieldItemListInterface;
  */
 class ComputedArticlesCountFormatter extends FormatterBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $elements = [];
     $entity = $items->getEntity();
@@ -42,4 +45,5 @@ class ComputedArticlesCountFormatter extends FormatterBase {
 
     return $elements;
   }
+
 }

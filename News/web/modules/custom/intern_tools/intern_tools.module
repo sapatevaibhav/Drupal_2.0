@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Custom module for Intern Tools.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_help().
+ */
+function intern_tools_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.intern_tools':
+      return '<p>This module was created by an intern!</p>';
+  }
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function intern_tools_node_view(array &$build, NodeInterface $node, $view_mode, $langcode) {
+  if ($view_mode == 'full') {
+    $build['intern_tools_note'] = [
+      '#type' => 'markup',
+      '#markup' => '<div class="intern-note">🛠️ Intern Tools: You are viewing a node of type <strong>' . $node->getType() . '</strong>.</div>',
+      '#weight' => 100,
+    ];
+  }
+}

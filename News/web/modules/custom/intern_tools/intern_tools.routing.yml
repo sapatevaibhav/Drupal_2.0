@@ -1,0 +1,7 @@
+intern_tools.admin_page:
+  path: '/admin/config/intern-tools'
+  defaults:
+    _controller: '\Drupal\intern_tools\Controller\InternToolsController::adminPage'
+    _title: 'Intern Tools Admin'
+  requirements:
+    _permission: 'access intern tools admin page'
