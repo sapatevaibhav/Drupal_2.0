@@ -1,0 +1,8 @@
+name: 'Intern Tools'
+type: module
+description: 'Custom tools built by intern'
+core_version_requirement: ^9 || ^10
+package: Vaibhav
+dependencies:
+  - drupal:node
+  - user

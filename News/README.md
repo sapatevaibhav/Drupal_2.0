@@ -5,3 +5,5 @@
 ## [Fifth Activity : Essential contrib modules](Activity5.md)
 ## [Sixth Activity : Complex module integration](Activity6.md)
 ## [Seventh Activity : Module Development](Activity7.md)
+## [Eighth Activity : Custom Block and Form](Activity8.md)
+## [Ninth Activity : API Integration Module](Activity9.md)

@@ -1,0 +1,7 @@
+name: 'Weather Widget'
+type: module
+description: 'Displays weather info from external API with config, caching, and error handling.'
+core_version_requirement: ^10
+package: Vaibhav
+dependencies:
+  - config

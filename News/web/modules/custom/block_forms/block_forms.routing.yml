@@ -1,0 +1,8 @@
+
+block_forms.config:
+  path: '/admin/config/block-forms/settings'
+  defaults:
+    _form: '\Drupal\block_forms\Form\InternConfigForm'
+    _title: 'Intern Tools Configuration'
+  requirements:
+    _permission: 'administer intern tools'

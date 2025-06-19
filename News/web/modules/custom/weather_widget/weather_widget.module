@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Weather Widget module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function weather_widget_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name === 'help.page.weather_widget') {
+    return '<p>' . t('Displays current weather using an external API.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function weather_widget_theme() {
+  return [
+    'weather_widget' => [
+      'variables' => [
+        'weather' => NULL,
+      ],
+      'template' => 'weather-widget',
+    ],
+  ];
+}

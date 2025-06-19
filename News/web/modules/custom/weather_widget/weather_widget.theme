@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Provides the Weather Widget module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function weather_widget_theme($existing, $type, $theme, $path) {
+  return [
+    'weather_widget' => [
+      'variables' => [
+        'weather' => NULL,
+      ],
+      'template' => 'weather-widget',
+    ],
+  ];
+}
+
+/**
+ * Preprocess function for the weather widget.
+ */
+function weather_widget_preprocess_weather_widget(&$variables) {
+  $variables['#attached']['library'][] = 'weather_widget/weather';
+}

@@ -1,0 +1,7 @@
+weather_widget.settings:
+  path: '/admin/config/weather-widget'
+  defaults:
+    _form: '\Drupal\weather_widget\Form\WeatherSettingsForm'
+    _title: 'Weather Widget Settings'
+  requirements:
+    _permission: 'administer site configuration'

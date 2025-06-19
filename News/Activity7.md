@@ -1,5 +1,5 @@
 # Section 4 Module Development
-## Activity 3.2
+## Activity 4.1
 ### Your First Custom Module
 #### Files
 intern_tools.info.yml – Declares module info and dependencies.

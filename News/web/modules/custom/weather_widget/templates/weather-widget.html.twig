@@ -1,0 +1,15 @@
+{# Weather Widget Template #}
+{% if weather %}
+  <div class="weather-widget">
+    <h3>{{ weather.location.name }}</h3>
+    <div class="weather-info">
+      <p>Temperature: {{ weather.current.temp_c }}°C</p>
+      <p>Condition: {{ weather.current.condition.text }}</p>
+      <p>Humidity: {{ weather.current.humidity }}%</p>
+    </div>
+  </div>
+{% else %}
+  <div class="weather-widget-error">
+    {{ 'Weather information is not available.'|t }}
+  </div>
+{% endif %}
