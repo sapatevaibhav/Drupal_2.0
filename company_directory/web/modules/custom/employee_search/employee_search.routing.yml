@@ -1,0 +1,7 @@
+employee_search.form:
+  path: '/employees/search'
+  defaults:
+    _form: '\Drupal\employee_search\Form\EmployeeSearchForm'
+    _title: 'Search Employees'
+  requirements:
+    _permission: 'access content'

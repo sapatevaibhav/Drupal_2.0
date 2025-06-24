@@ -1,0 +1,7 @@
+name: 'Employee Search'
+type: module
+description: 'Provides a simple form to search employees by name and department.'
+core_version_requirement: ^10 || ^11
+package: 'Vaibhav'
+dependencies:
+  - node

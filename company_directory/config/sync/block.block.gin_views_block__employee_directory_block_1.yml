@@ -1,0 +1,33 @@
+uuid: c6f3ccbd-c05e-4b4f-95bf-0e49a16c2f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.employee_directory
+  module:
+    - node
+    - views
+  theme:
+    - gin
+id: gin_views_block__employee_directory_block_1
+theme: gin
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:employee_directory-block_1'
+settings:
+  id: 'views_block:employee_directory-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      department: department

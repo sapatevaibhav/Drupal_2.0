@@ -1,0 +1,26 @@
+uuid: 47890876-90ee-4911-afeb-e8d1db0379d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_form
+    - node.type.department
+    - webform.webform.contact
+id: node.department.field_contact_form
+field_name: field_contact_form
+entity_type: node
+bundle: department
+label: 'Contact Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 353dc3d5-10d5-4daa-a40b-5b0702aab81d
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 79ccde71-733f-49a9-9d19-0fc0e2c52075
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_head_of_department
+field_name: field_head_of_department
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

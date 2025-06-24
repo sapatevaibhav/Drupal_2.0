@@ -1,0 +1,22 @@
+uuid: 5d411919-976c-4c78-9ac6-822567765ce1
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+id: '3'
+label: '3'
+type: 'canonical_entities:node'
+pattern: 'e/[current-page:title]'
+selection_criteria:
+  6c993781-2ff4-4d2a-a187-a3585e227b81:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 6c993781-2ff4-4d2a-a187-a3585e227b81
+    context_mapping:
+      node: node
+    bundles:
+      employee: employee
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,20 @@
+uuid: 59de470d-f05f-4984-a2d0-0a62281ca1d9
+langcode: en
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/dev
+module:
+  admin_toolbar: 0
+  devel: 0
+  devel_generate: 0
+  admin_toolbar_tools: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

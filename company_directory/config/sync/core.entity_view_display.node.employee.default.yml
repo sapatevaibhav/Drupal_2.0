@@ -1,0 +1,79 @@
+uuid: 7780c51e-b9f2-44a1-94b6-8cbb48a2289d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee.field_department
+    - field.field.node.employee.field_email2
+    - field.field.node.employee.field_job_title
+    - field.field.node.employee.field_joined_on
+    - field.field.node.employee.field_phone2
+    - field.field.node.employee.field_photo
+    - image.style.medium
+    - node.type.employee
+  module:
+    - datetime
+    - image
+    - user
+id: node.employee.default
+targetEntityType: node
+bundle: employee
+mode: default
+content:
+  field_department:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_email2:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_joined_on:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_phone2:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
